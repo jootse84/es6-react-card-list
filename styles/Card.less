@@ -5,7 +5,7 @@
     -moz-transition: 0.8s all;
     -ms-transition: 0.8s all;
     margin-left: 4%;
-    width: 20.75%;
+    width: 21.75%;
     float: left;
     padding: 0px;
     height: 500px;
@@ -13,15 +13,16 @@
     list-style: none;
     display: list-item;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 
     &:nth-child(4n+1) {
         margin-left: 0 !important;
     }
 
     p {
-        width: 78%;
-        margin: 0 auto;
-        font-size: 1.3em;
+        width: 100%;
+        margin: 0 0 10px;
+        font-size: 1.1em;
         line-height: 1.5em;
         margin-bottom: 30px;
     }
@@ -39,13 +40,11 @@
                 color: #c8c9cb;
                 padding: 10px 40px;
                 font-size: 1.3em;
+                text-align: center;
                 span {
-                    color:#c8c9cb;
+                    color: #c8c9cb;
                     font-size: 1em;
                     display: inline-block;
-                    &:first-child {
-                        width: 50%;
-                    }
                 }
             }
             &:hover {
@@ -69,34 +68,35 @@
         }
     }
 
-    #banner {
+    .banner {
         color: #fff;
-        height: 180px;
+        height: 190px;
         width: 100% !important;
         overflow: hidden;
-        #level {
+        .level {
             font-size: 1em;
             line-height: 1.3em;
             letter-spacing: 0.05em;
-            padding-top: 2px;
+            padding-top: 5px;
+            font-weight: bold;
         }
         span {
             color: #fff;
             text-align: center;
             display: block;
         }
-        #circle {
+        .circle {
             width: 130px;
             border: 8px solid #fff;
             padding-top: 28px;
-            height: 130px;
+            height: 100px;
             border-radius: 50%;
             -webkit-border-radius: 50%;
             margin: 10px auto;
             font-size: 1em;
+            font-weight: bold;
             span:first-child {
                 font-size: 2.7em;
-                font-weight: bold;
                 line-height: 1.1em;
             }
         }
@@ -109,15 +109,16 @@
         background: #fff;
         width: 150px;
         text-align: center;
-        height: 30px;
-        line-height: 30px;
+        height: 20px;
+	font-size: 15px;
+        line-height: 20px;
         -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
     &:nth-child(n+0) {
-        #banner {
+        .banner {
             background: #63c6ae;
         }
         p {
@@ -132,7 +133,7 @@
     }
 
     &:nth-child(2n+0) {
-        #banner {
+        .banner {
             background: #f7b52b;
         }
         p {
@@ -147,7 +148,7 @@
     }
 
     &:nth-child(3n+0) {
-        #banner {
+        .banner {
             background: #2ba6e1;
         }
         p {
@@ -162,7 +163,7 @@
     }
 
     &:nth-child(4n+0) {
-        #banner {
+        .banner {
             background: #036db7;
         }
         p {

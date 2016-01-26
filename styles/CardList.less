@@ -9,8 +9,16 @@
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
     ul {
+        position: absolute;
+        bottom: 0;
         padding: 0;
         margin: 0;
+        @media (min-width: 481px) and (max-width: 767px) {
+            padding-right: 5%;
+        }
+        @media (max-width: 480px) {
+            padding-right: 10%;
+        }
         li {
             width: 100%;
             transition: 0.5s all;

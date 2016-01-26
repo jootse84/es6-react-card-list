@@ -17,7 +17,9 @@ export default class CardList extends Component {
     getCategoryText (cat) {
         return (
             <div>
-                {cat.category == 1 ? 'Montly' : 'Anual'} ${cat.price}
+                ${cat.price}
+                &nbsp;&nbsp;/&nbsp;&nbsp;
+                <small>{cat.category == 1 ? 'Monthly' : 'Anual'}</small>
             </div>
         );
     }

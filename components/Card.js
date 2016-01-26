@@ -3,18 +3,25 @@ import '../styles/Card.less'
 
 export default class Card extends Component {
     render() {
-        const cat = this.props.card[Object.keys(this.props.card)[0]];
+        const cat = this.props.card[Object.keys(this.props.card)[0]]
+        var badge = null
+
+        if (cat.badge) {
+            badge = (
+                <span className="badge">
+                    {cat.badge}
+                </span>
+            )
+        }
 
         return (
             <li className="card_box">
-                <p id="banner">
-                    <span className="badge">
-                        {cat.badge}
-                    </span>
-                    <span id="level">
+                <p className="banner">
+                    {badge}
+                    <span className="level">
                         {cat.level}
                     </span>
-                    <span id="circle">
+                    <span className="circle">
                         <span>
                             {cat[this.props.quotaId]}
                         </span>
